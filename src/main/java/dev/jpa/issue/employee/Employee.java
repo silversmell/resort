@@ -15,7 +15,7 @@ public class Employee {
    * 사원 번호, 식별자, sequence 자동 생성됨.
    * @Id: Primary Key
    */
-  @Id
+  @Id 
   @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="employee_seq")
   @SequenceGenerator(name="employee_seq", sequenceName="EMPLOYEE_SEQ", allocationSize=1)
   private int employeeno;
